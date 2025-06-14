@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+scikit-learn
+joblib
+numpy
+pandas
+pytz==2023.3
+requests
+python-json-logger
