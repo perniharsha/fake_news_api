@@ -1,0 +1,22 @@
+#data handling
+pandas
+numpy 
+
+#text processing
+nltk
+scikit-learn
+
+#model saving/loading
+joblib
+
+#web scraping
+
+beautifulsoup4
+requests
+lxml
+
+streamlit
+
+jupyter
+
+python-dateutil
