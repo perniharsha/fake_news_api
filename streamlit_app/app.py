@@ -1,6 +1,6 @@
 import streamlit as st
 import joblib
-from shared.preprocessing import clean_text
+from prepro import clean_text
 
 model = joblib.load('logitsic_regression_model.pkl')
 vectorizer = joblib.load('tfidf_vectorizer.pkl')

@@ -1,22 +1,12 @@
-version: '3.8'
-
 services:
   fastapi:
-    build:
-      context: ./fastapi
+    build: ./fastapi_app
     ports:
       - "8000:8000"
-    volumes:
-      - ./fastapi:/app
-      - ./shared:/app/shared
-    container_name: fake_newsd-fastapi
+    restart: always
 
   streamlit:
-    build:
-      context: ./streamlit
+    build: ./streamlit_app
     ports:
       - "8501:8501"
-    volumes:
-      - ./streamlit:/app
-      - ./shared:/app/shared
-    container_name: fake_newsd-streamlit
+    restart: always
