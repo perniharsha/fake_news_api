@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 import joblib
-from shared.preprocessing import clean_text
+from fastapi_app.shared.preprocessing import clean_text
 
 
 app = FastAPI()
