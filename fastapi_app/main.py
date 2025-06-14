@@ -3,12 +3,18 @@ from pydantic import BaseModel
 import joblib
 from fastapi_app.shared.preprocessing import clean_text
 
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(BASE_DIR, 'logitsic_regression_model.pkl')
+vectorizer_path = os.path.join(BASE_DIR, 'tfidf_vectorizer.pkl')
+
+model = joblib.load(model_path)
+vectorizer = joblib.load(vectorizer_path)
 
 app = FastAPI()
 
 # Load the model and vectorizer
-model = joblib.load('logitsic_regression_model.pkl')
-vectorizer = joblib.load('tfidf_vectorizer.pkl')
 
 # Define request body format
 class NewsRequest(BaseModel):
