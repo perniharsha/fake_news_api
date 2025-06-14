@@ -1,0 +1,28 @@
+# Ignore Python virtual environment
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Ignore local settings
+.env
+*.env
+
+# Ignore system files
+.DS_Store
+
+# Ignore logs
+*.log
+
+# Ignore IDE/project files
+.vscode/
+.idea/
+
+# Ignore OS-generated files
+Thumbs.db
+ehthumbs.db
